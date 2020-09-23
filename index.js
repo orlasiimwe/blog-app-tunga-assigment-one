@@ -82,7 +82,7 @@ function login() {
 function logout() {
     //remove the localstorage variable loggedIn when logging out
     localStorage.removeItem('loggedIn');
-    window.location.replace('login.html');
+    window.location.replace('index.html');
 }
 
 //create blogstore in local storage
@@ -128,6 +128,7 @@ function retrieveBlogs() {
     blogstore.forEach(function (item, id) {
 
         const singleBlog = document.createElement("p");
+        const br =document.createElement("br");
         const deletebtn = document.createElement("button");
         const updatebtn = document.createElement("button");
 
@@ -153,6 +154,7 @@ function retrieveBlogs() {
         updatebtn.innerHTML = "update";
         updatebtn.className = "btn btn-warning updateBtn";
         singleBlog.innerHTML = `<span>${orla.blogvalue}</span>`;
+        singleBlog.appendChild(br)
         singleBlog.appendChild(deletebtn);
         singleBlog.appendChild(updatebtn);
         deletebtn.className = `btn btn-danger deleteBtn ${id} `;

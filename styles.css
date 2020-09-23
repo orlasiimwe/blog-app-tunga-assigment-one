@@ -1,4 +1,6 @@
-
+.index{
+    width:50%;
+}
 .index h1, .login h1, .post h1{
     padding-top: 30px;
     text-align: center;
@@ -60,13 +62,15 @@
 }
 .post .logout{
     margin-top: -60px;
-    color:black;
+    text-decoration: underline;
+    font-weight: bold;
+    /* color:black;
     border-radius: 10px;
     font-size: 16px;
     width:100px;
     height:40px;
     background-color: chocolate;
-    border: none;
+    border: none; */
 }
 .post .inputEl{
     height:200px;
@@ -86,22 +90,29 @@
     font-weight: bold;
 }
 .updateBtn{
-    background-color:blue;
+    background-color:greenyellow;
     text-align: center;
     border: none;
     font-weight: bold;
+    
     text-transform: capitalize;
     position: relative;
     bottom: 0;
     right: 0;
-    align-self: right;
+    margin-left: 5%;
+    margin-top: 7%;
 
 }
 .deleteBtn{
     background-color: red;
+    margin-top: 7%;
+    color: black;
+    margin-left: 50%;
     text-align: center;
     border: none;
     font-weight: bold;
     text-transform: capitalize;
 }
-
+p{
+    padding-top: 2%;
+}
