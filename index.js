@@ -42,12 +42,19 @@ function createAccount() {
     }
     else {
         if (user_name.trim().length !== 0) {
+            if(user_password.trim().length !== 0){
+
+            
             userstore.push(user);
             localStorage.setItem("accounts", JSON.stringify(userstore));
             //keep value of the authenticated user in localStorage variable loggedIn
             localStorage.setItem('loggedIn', name.value);
             //direct to the blog.html page for this new user
             window.location.replace('blog.html');
+            }
+            else{
+                alert('Fill in all required fields')
+            }
         } else {
             alert("Fill in the required fields")
         }
@@ -60,6 +67,7 @@ function login() {
     let userstore = createUserStore();
     const auth_name = loginname
     const auth_pass = loginpassword
+    
     if (userstore.find(element => element.user_name === auth_name.value)) {
         if ((userstore.find(element => element.user_name === auth_name.value && element.user_password === auth_pass.value))) {
             //keep value of the authenticated user in localStorage variable loggedIn
