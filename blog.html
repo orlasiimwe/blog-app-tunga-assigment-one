@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <title>Simple Todo App</title>
-  </head>
-  <body>
-    <div class="container mx-auto">
-      <h1>Simple Todo App</h1>
-      <input class="inputEl form-control fpr,form-control-sm" value="" /><br />
-      <input class="inputEl form-control fpr,form-control-sm" value="" required /><br />
-      <button class="btn btn-lg btn-success addToDoBtn">Add Todo</button>
-      <h4 class="mt-3">Our Todos</h4>
-      <hr />
-      <div class="todos mt-3"></div>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <link rel="stylesheet" href="styles.css">
+    <title>Blogs</title>
+</head>
+
+<body>
+    <div class="post container">
+        <h1>Your Page</h1>
+        <button class='logout float-right' onclick="logout()">Logout</button>
+        <h6>Add a new blog!!</h6>
+        <input class="inputEl form-control fpr,form-control-sm" value="" required /><br />
+        <button class="btn btn-lg btn-success addToDoBtn">Add Blog</button>
+        <h4 class=" heading mt-3">Your Blogs</h4>
+        
+        <div class="blogs mt-3"></div>
     </div>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>
